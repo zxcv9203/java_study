@@ -8,10 +8,8 @@ public interface ShipFactory {
         sendEmailTo(email, ship);
         return ship;
     }
-    private void sendEmailTo(String email, Ship ship) {
-        System.out.println(ship.getName() + " 다 만들었습니다.");
-    }
 
+    void sendEmailTo(String email, Ship ship);
     Ship createShip();
 
     private void validateCheck(String name, String email) {
